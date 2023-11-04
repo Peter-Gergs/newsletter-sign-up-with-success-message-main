@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #36384d;
+  font-family: "Roboto", sans-serif;
+}
+.hide {
+  transform: translate(-50%, -50%) scale(0) !important;
+}
+.sign-up-form {
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  position: absolute;
+  gap: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 24px;
+  width: 900px;
+  transition: 0.2s;
+}
+.sign-up-form .text {
+  margin-left: 2.5rem;
+  font-size: 16px;
+}
+.sign-up-form .text h1 {
+  font-size: 3rem;
+  margin-top: 5.5rem;
+  margin-bottom: 1rem;
+}
+.sign-up-form .text p {
+  line-height: 1.7;
+}
+.sign-up-form .text ul li {
+  margin-left: 35px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.sign-up-form .text ul li::before {
+  content: url("../../assets/images/icon-list.svg");
+  position: absolute;
+  left: -38px;
+  top: -2px;
+}
+.sign-up-form .text form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 40px;
+  position: relative;
+}
+.sign-up-form .text form label {
+  margin-bottom: -15px;
+}
+.sign-up-form .text form input {
+  border: 1px solid black;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.sign-up-form .text form input:focus {
+  outline: none;
+}
+.sign-up-form .text form input[type="submit"] {
+  background: #232740;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  transition: 0.3s;
+  position: relative;
+  z-index: 44;
+}
+.sign-up-form .text form input[type="submit"]:hover {
+  background: linear-gradient(to right, #ff537b, #fe6a3a);
+}
+.sign-up-form input[type="submit"] + span {
+  transition: 0.3s all;
+}
+.sign-up-form input[type="submit"]:hover + span {
+  background: linear-gradient(to right, #ff537b, #fe6a3a);
+  width: 380px;
+  display: block;
+  height: 46px;
+  position: absolute;
+  bottom: 0;
+  filter: blur(10px);
+  z-index: 1;
+}
+
+.sign-up-form .text form .error {
+  color: #d37470;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  font-weight: 700;
+  display: none;
+}
+.success-message {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 25px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.3s;
+}
+.success-message.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.success-message h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+  line-height: 1;
+}
+.success-message p {
+  margin: 20px 0;
+  font-size: 13px;
+}
+.success-message p span {
+  font-weight: bold;
+}
+.success-message input {
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: #232740;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.3s;
+  position: relative;
+  z-index: 44;
+}
+.success-message input[type="button"]:hover {
+  background: linear-gradient(to right, #ff537b, #fe6a3a);
+}
+.success-message input[type="button"] + span {
+  transition: 0.3s all;
+}
+.success-message input[type="button"]:hover + span {
+  background: linear-gradient(to right, #ff537b, #fe6a3a);
+  width: 321px;
+  display: block;
+  height: 46px;
+  position: absolute;
+  bottom: 26px;
+  filter: blur(10px);
+  z-index: 1;
+  transition: 0.3s all;
+}
